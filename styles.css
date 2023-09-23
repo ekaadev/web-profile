@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  background-color: #111011;
+  color: white;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+  transition-duration: 300ms;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Monsterrat', sans-serif;
+}
+
+header {
+  margin-bottom: 6rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 58rem;
+  margin: 0  auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav li {
+  margin: 0 3rem;
+  list-style: none;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  font-weight:  500;
+}
+
+nav ul a:hover {
+  color: #38bdf8;
+}
+
+.container-home {
+  padding: 1.5rem;
+  display: flex;
+  max-width: 58rem;
+  margin: 7rem auto 5rem auto;
+}
+
+.profile {
+  margin-top: 7rem;
+}
+
+.profile > h2 {
+  margin-bottom: 0.5rem;
+  color: #646464;
+}
+
+.profile > h1 {
+  margin-bottom: 0.5rem;
+}
+
+.profile > p {
+  font-weight: 600;
+  color: #7f7e7e;
+}
+
+.photo-profile {
+  margin-left: 6rem;
+}
+
+.img-profile {
+  width: 320px;
+  border-radius: 100%;
+}
+
+.about {
+  width: 100%;
+  background-color: #191F20;
+}
+
+.container-about {
+  padding: 4.5rem 1.5rem;
+  max-width: 58rem;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.container-about > h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.container-about p {
+  margin-bottom: 1.5rem;
+  color: #cbc5c5;
+  text-align: center;
+}
+
+.project {
+  width: 100%;
+  background-color: #111011;
+}
+
+.container-project {
+  max-width: 58rem;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem;
+}
+
+.container-project > h1 {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.photo-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container-project1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15rem;
+  line-height: 1.5;
+  margin-bottom: 10rem;
+}
+
+.container-project1 h2 {
+  text-align: end;
+}
+
+.container-project1 p {
+  text-align: end;
+  color: #646464;
+  font-size: 18px;
+  transition-duration: 300ms;
+}
+
+.container-project1 a {
+  text-decoration: none;
+  text-align: end;
+  color: #fff;
+}
+
+.container-project1 p:hover {
+  color: #fff;
+}
+
+.tech-stack  {
+  font-size: 42px;
+}
+
+.uil-html5:hover {
+  transition-duration: 300ms;
+  color: #e34c26;
+  cursor: pointer;
+}
+
+.uil-css3-simple:hover {
+  transition-duration: 300ms;
+  color: #264de4;
+  cursor: pointer;
+}
+
+.uil-vuejs:hover {
+  color: #41B883;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+.container-project2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15rem;
+  line-height: 1.5;
+  margin-bottom: 10rem;
+}
+
+.container-project2 h2 {
+  text-align: left;
+}
+
+.container-project2 p {
+  text-align: left;
+  color: #646464;
+  font-size: 18px;
+  transition-duration: 300ms;
+}
+
+.container-project2 a {
+  text-decoration: none;
+  text-align: end;
+  color: #fff;
+}
+
+.container-project2 p:hover {
+  color: #fff;
+}
+
+.container-project3 {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15rem;
+  line-height: 1.5;
+  margin-bottom: 10rem;
+}
+
+.container-project3 h2 {
+  text-align: end;
+}
+
+.container-project3 p {
+  text-align: end;
+  color: #646464;
+  font-size: 18px;
+  transition-duration: 300ms;
+}
+
+.container-project3 a {
+  text-decoration: none;
+  text-align: end;
+  color: #fff;
+}
+
+.container-project3 p:hover {
+  color: #fff;
+}
+
+.container-project3 span {
+  padding: 2px 5px;
+  background-color: #fff;
+  color: #111011;
+  border-radius: 2px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #191F20;
+  padding-top: 4.5rem;
+}
+
+.container-footer {
+  max-width: 58rem;
+  padding: 1rem 1rem 4.5rem 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px #646464 solid;
+}
+
+.container-footer > div a, .container-footer > div p {
+  color: #ababab;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .container-home {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 2rem auto 4rem auto;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile {
+    margin: 3rem auto 3rem auto;
+    text-align: center;
+  }
+
+  .photo-profile {
+    margin: 0 auto;
+  }
+
+  .img-profile {
+    width: 220px;
+  }
+
+  .container-project {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .container-project > h1 {
+    margin-bottom: 5rem;
+  }
+
+  .container-project1 {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .container-project1 h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .container-project1 p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .container-project2 a {
+    text-align: center;
+  }
+
+  .container-project2 {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .container-project2 h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .container-project2 p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .container-project2 a {
+    text-align: center;
+  }
+
+  .container-project2 a {
+    text-align: center;
+  }
+
+  .container-project3 {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .container-project3 h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .container-project3 p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .container-project3 a {
+    text-align: center;
+  }
+
+  .footer {
+    padding: 4.5rem 1.5rem 0 1.5rem;
+  }
+
+}
