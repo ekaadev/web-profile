@@ -279,7 +279,56 @@ nav ul a:hover {
   font-size: 20px;
 }
 
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: all;
+  transition-duration: 300ms;
+}
+
+.menu-toggle span:nth-child(1) {
+  transform-origin: left;
+}
+
+.menu-toggle span:nth-child(3) {
+  transform-origin: left;
+}
+
+.menu-toggle.open span:nth-child(1) {
+  background-color: #fff;
+  transform: rotate(45deg) translate(-1px, -2px);
+}
+
+.menu-toggle.open span:nth-child(2) {
+  transform: scaleX(1);
+  background-color: transparent;
+  
+}
+
+.menu-toggle.open span:nth-child(3) {
+  background-color: #fff;
+  transform: rotate(-45deg) translate(0px, 0px);
+}
+
 @media screen and (max-width: 800px) {
+
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
   .container-home {
     display: flex;
     flex-direction: column-reverse;
@@ -287,7 +336,7 @@ nav ul a:hover {
   }
 
   nav ul {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
   }
